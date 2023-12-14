@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>sae</title>
+    <style>
+      .container{
+        width: 1100px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-content: center; */
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .container h1{
+        display: flex;
+        justify-content: center;
+      }
+
+      .container p{
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="sae.js"></script>
+    <div class="container">
+      <h1>Statistiques </h1>
+      <h2>Récapitulatif des solveurs</h2>
+      <p>
+        Avec ce premier graphique, vous pouvez observer le bilan de claque solveur. 
+      </p>
+      <p>
+        Le nombre total de problème qu'il a testé, les problèmes qu'il n'est pas capable de résolver, les problèmes qui ne sont pas résolvables et les problèmes qu'il a résolus. 
+      </p>
+      <div style="width: 1100px;"><canvas id="barres"></canvas></div>
+      <h2>Efficacité des solveurs</h2>
+      <p>
+        Avec ce second graphique, vous pouvez observer l'efficacité de chaque solveur.
+      </p>
+      <div style="width: 1100px;"><canvas id="barreremplie"></canvas></div><br/>
+    </div>
+
+    <script type="module" src="barres.js"></script>
+    <!-- <script type="module" src="barreremplie.js"></script> -->
+  </body>
+</html>
